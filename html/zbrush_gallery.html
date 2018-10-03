@@ -1,0 +1,150 @@
+<!-- zbrush_gallery.html -->
+
+<!DOCTYPE html>
+
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- meta:vp -->
+  <meta name="viewport" 
+  content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="../fontawesome5/css/all.css" />
+  <!-- mycss -->
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/src/zbrush_gallery/zbrush_gallery_all.css" />
+  <!-- ie -->
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/pie/PIE_IE9.js"></script>
+  <![endif]-->
+    
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <title>Zbrush Gallery</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+  	<!-- headBox -->
+    <header id="headBox" class="box">
+    </header>
+    
+
+   <!-- bannerBox -->
+    <article id="bannerBox">
+      <h2><span class="hidden"></span>
+      <a href="#"><span class="hidden">testimonial</span></a></h2>
+
+      <div class="bBox">
+        <span></span>
+          </div>
+
+          <div class="list">
+           <ul>
+            <li><a href="#">
+            </a></li>
+           <li><a href="#">
+            </a></li>
+           <li><a href="#">
+            </a></li>
+            <li><a href="#">
+            </a></li>
+            <li><a href="#">
+            </a></li>
+          </ul>
+      </div>
+    </article>
+
+
+
+
+    <!-- userBox -->
+    <article id="userBox" class="box">
+    	<h2>want to join one of them?</h2>
+    	<p>ZBrush Specialists are here to share their experience for a better artworks</p>
+    	<ul class="userList">
+    		<li>
+    			<div></div>
+    				<dl>
+    					<i class="fas fa-quote-left" id="q1"></i>
+    					<i class="fas fa-quote-right" id="q2"></i>
+    					<dt>Those of you who've been following our previous interviews may also notice a style difference this time around. It's more conversational. The reason for this is that I was able to chat directly with Brett via instant messenger, which made for a very lively dialogue. We hope you'll enjoy it.
+							</dt>
+    				</dl>
+    		</li>
+
+    		<li>
+    			<div></div>
+    				<dl>
+              <i class="fas fa-quote-left" id="q3"></i>
+              <i class="fas fa-quote-right" id="q4"></i>
+    					<dt> Now we're pleased to be able to bring you a detailed walkthrough of his techniques as he worked on our Second Prize winner. Martin's approach was a bit different, since he actually posed his character early in production. </dt>
+    				</dl>	
+    		</li>
+
+        <li>
+          <div></div>
+            <dl>
+              <i class="fas fa-quote-left" id="q5"></i>
+              <i class="fas fa-quote-right" id="q6"></i>
+              <dt> Those of you who've been following our previous interviews may also notice a style difference this time around. It's more conversational. The reason for this is that I was able to chat directly with Brett via instant messenger, which made for a very lively dialogue. </dt>
+            </dl> 
+        </li>
+    	</ul>
+    </article>
+
+
+
+    <!-- dealBox -->
+   <article id="dealBox" class="box">
+    <h2 class="hidden">Tutorial Deal Event</h2>
+      <div class="dealText">
+        <p>FLASH DEAL</p>
+        <p>Only chance to get the best tutorials at best price</p>
+        <ul class="count">
+          <li id="day">
+            <span class="num"></span><br />
+            <span>days</span>
+          </li>
+          <li id="hour">
+            <span class="num"></span><br />
+            <span>hours</span>
+          </li>
+          <li id="minute">
+            <span class="num"></span><br />
+            <span>minutes</span>
+          </li>
+          <li id="second">
+            <span class="num"></span><br />
+            <span>second</span>
+          </li>
+        </ul>
+        <div class="shopBtn"><a href="#">shop now</a></div>
+      </div>
+      <div class="dealImg"></div>
+    </article>
+
+
+
+    <!-- footBox -->
+  <article id="footBox" class="box">
+  </article>
+  </div>
+
+  <!-- javascript -->
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../js/src/zbrush_gallery.js"></script>
+  <script>
+    (function($){
+      var headBox = $('#headBox');
+      var footBox = $('#footBox');
+      headBox.load('./all/headBox.html');
+      footBox.load('./all/footBox.html');
+    })(jQuery);
+  </script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!-- zbrush_tutorial.html -->
+
+<!DOCTYPE html>
+
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- meta:vp -->
+  <meta name="viewport" 
+  content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="../fontawesome5/css/all.css" />
+  <!-- mycss -->
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/src/zbrush_tutorial/zbrush_tutorial_all.css" />
+  <!-- ie -->
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/pie/PIE_IE9.js"></script>
+  <![endif]-->
+    
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <title>Zbrush Tutorial</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+  	<!-- headBox -->
+    <header id="headBox" class="box">
+    </header>
+    
+
+   <!-- bannerBox -->
+    <article id="searchBox">
+      <h2 class="hidden">원하는 튜토리얼 검색해보세요</h2>
+      <p>1MINUTE TUTORIALS TO LEARN <br /> ALL SKILLS ABOUT ZBRUSH</p>
+      <div id=search_wrap>
+        <div id=search>
+        <input type="text" placeholder="search for tutorial">
+        </div>
+        <button type="button" id="search_btn">search</button>
+    </div>
+    </article>
+
+
+
+
+    <!-- userBox -->
+    <article id="industryBox">
+    	<h2>Tutorials by industry</h2>
+       <ul class="inBox">
+         <li>
+          <a href="#">
+            <dl>
+              <dt>GAME</dt>
+              <dd>REVERSE THE TREND. START HIGH POLY AND GO LOW</dd>
+            </dl>
+          </a>
+        </li>
+         <li>
+          <a href="#">
+            <dl>
+              <dt>VFX/FILM</dt>
+              <dd>FROM CONCEPT TO ULTRA-DETAILED MODEL</dd>
+            </dl>
+          </a>
+        </li>
+         <li>
+          <a href="#">
+            <dl>
+              <dt>ILLUSTRATOR</dt>
+              <dd>TAKE YOUR CREATIVITY BEYOND IMAGINATION</dd>
+            </dl>
+          </a>
+        </li>
+         <li>
+          <a href="#">
+            <dl>
+              <dt>ADVERTISEMENT</dt>
+              <dd>Creativity from another dimension is at your fingertips</dd>
+            </dl>
+          </a>
+        </li>
+         <li>
+          <a href="#">
+            <dl>
+              <dt>EDUCATION</dt>
+              <dd>The student of today is the professional of tomorrow</dd>
+            </dl>
+          </a>
+        </li>
+       </ul>
+    </article>
+
+    <!-- topBox -->
+    <article id="topBox">
+      <h2>Top3 tutorials</h2>
+    <div class="tab_box">
+      <ul>
+        <li class="select">
+          <a href="#">
+          <i class="far fa-address-card"></i>
+        BEST</a></li>
+
+        <li>
+          <a href="#">
+          <i class="far fa-address-card"></i>
+        POPULAR</a></li>
+
+        <li>
+          <a href="#">
+          <i class="far fa-address-card"></i>
+        TRENDING</a></li>
+
+      </ul>
+      <div class="tab_text">
+        <div class="select">
+          <h2>
+          </h2>
+          <ul class="text1">
+            <li><a href="#">
+            </a></li>
+            <li><a href="#">
+            </a></li>
+            <li><a href="#">
+            </a></li>
+            <li><a href="#">
+            </a></li>
+            <li><a href="#">
+            </a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2><span class="hidden">tab_02</span>
+          </h2>
+           <ul class="text2">
+            <li><a href="#">
+            </a></li>
+            <li><a href="#">
+            </a></li>
+            <li><a href="#">
+            </a></li>
+            <li><a href="#">
+            </a></li>
+            <li><a href="#">
+            </a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2><span class="hidden">tab_03</span>
+          </h2>
+          <ul class="text3">
+            <li><a href="#">
+            </a></li>
+            <li><a href="#">
+            </a></li>
+            <li><a href="#">
+            </a></li>
+            <li><a href="#">
+            </a></li>
+            <li><a href="#">
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </article>
+
+    <!-- registerBox -->
+    <article id="registerBox">
+      <p>speed up your 3d modeling workflow</p>
+      <div class="sub">
+      <span></span>
+      <span><p>30days free trial</p></span>
+      <span></span>
+      </div>
+      <div class="register"><a href="#">register</a></div>
+    </article> 
+
+
+
+    <!-- footBox -->
+  <article id="footBox" class="box">
+  </article>
+  </div>
+
+  <!-- javascript -->
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../js/src/zbrush_tutorial.js"></script>
+  <script>
+    (function($){
+      var headBox = $('#headBox');
+      var footBox = $('#footBox');
+      headBox.load('./all/headBox.html');
+      footBox.load('./all/footBox.html');
+    })(jQuery);
+  </script>
+</body>
+</html>

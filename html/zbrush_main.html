@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- zbrush_main.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- meta:vp -->
+  <meta name="viewport" 
+  content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="../fontawesome5/css/all.css" />
+  <!-- mycss -->
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/src/zbrush_main/zbrush_main_all.css" />
+  <!-- ie -->
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/pie/PIE_IE9.js"></script>
+  <![endif]-->
+    
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <title>zbrush</title>
+</head>
+
+<body>
+  <!-- layout -->
+  <div class="loading"></div>
+
+  <div id="wrap">  
+
+  	<!-- headBox -->
+    <header id="headBox" class="box">
+    </header>
+
+  <!-- bannerBox -->
+        <div id="bannerBox" class="box">
+          <div class="copy">
+            <span></span>
+          <p>3D HAS NEVER BEEN THIS FUN</p>
+          <p>Makers of ZBrush, the world's no.1 digital sculpting application! <br />ZBrush 2018 is available NOW! </p>
+        </div>
+        </div>
+      
+
+   <!-- videoBox -->    
+   <article id="videoBox" class="box">
+
+    <div id="fullVideo" class="none">
+      <video autoplay="autoplay" muted="muted" loop="loop">
+        <source src="../media/video/zbrush_compressed.mp4" type="video/mp4">
+        <p>사용하고계신 브라우저는 비디오 지원되지 않으므로 크롬으로 이용하시길 바랍니다<br />
+           <a href="http://google.com/chrome">크롬바로가기</a></p>
+      </video>
+    </div>
+   </article>
+
+   <!-- featureBox -->
+    <article id="featureBox" class="box">
+    	<h2><a href="#">New features for Zbrush</a></h2>
+    	<ul class="featureList">
+    		<li><div>
+    			<p>Design anything in your own creative way</p>
+    			<a href="#" class="readBtn">READ MORE</a>
+    		</div></li>
+    		<li><div>
+    			<p>Elastic property on curve mode</p>
+    			<a href="#" class="readBtn">READ MORE</a>
+    		</div></li>
+    		<li><div>
+    			<p>Make sculpting easier and simpler</p>
+    			<a href="#" class="readBtn">READ MORE</a>
+    		</div></li>
+    	</ul>
+    </article>
+
+    <!-- userBox -->
+    <article id="userBox" class="box">
+    	<h2>want to join one of them?</h2>
+    	<p>ZBrush Specialists are here to share their experience for a better artworks</p>
+    	<ul class="userList">
+    		<li>
+    			<div></div>
+    				<dl>
+    					<i class="fas fa-quote-left" id="q1"></i>
+    					<i class="fas fa-quote-right" id="q2"></i>
+    					<dt>Those of you who've been following our previous interviews may also notice a style difference this time around. It's more conversational. The reason for this is that I was able to chat directly with Brett via instant messenger, which made for a very lively dialogue. We hope you'll enjoy it.
+							</dt>
+    				</dl>
+    		</li>
+
+    		<li>
+    			<div></div>
+    				<dl>
+              <i class="fas fa-quote-left" id="q3"></i>
+              <i class="fas fa-quote-right" id="q4"></i>
+    					<dt> Now we're pleased to be able to bring you a detailed walkthrough of his techniques as he worked on our Second Prize winner. Martin's approach was a bit different, since he actually posed his character early in production. </dt>
+    				</dl>	
+    		</li>
+    	</ul>
+    </article>
+
+
+    <!-- subscribeBox -->
+    <article id="subscribeBox" class="box">
+      <p>over 377,657 users subscribed</p>
+      <div class="sub">
+      <span></span>
+      <span><p>stay tuned with us</p></span>
+      <span></span>
+      </div>
+      <div class="btn">
+      <div class="subscribe"><a href="#">subscribe</a></div>
+      <div class="learn"><a href="#">learn more</a></div>
+    </div>
+    </article>
+
+
+    <!-- galleryBox vvv-->
+    <article id="galleryBox" class="box clearfix">
+      <p>Imagination is at your fingertips</p>
+      <ul class="gallery">
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </article>
+
+
+
+    <!-- downloadBox -->
+    <article id="downloadBox" class="box">
+      <p>speed up your 3d modeling workflow</p>
+      <div class="sub">
+      <span></span>
+      <span><p>30days free trial</p></span>
+      <span></span>
+      </div>
+      <div class="download"><a href="#">download</a></div>
+    </article>
+
+
+
+    <!-- footBox -->
+  <article id="footBox" class="box">
+  </article>
+  </div>
+
+
+  <!-- javascript -->
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../js/src/zbrush_main.js"></script>
+  <script>
+    (function($){
+      var headBox = $('#headBox');
+      var footBox = $('#footBox');
+      headBox.load('./all/headBox.html');
+      footBox.load('./all/footBox.html');
+    })(jQuery);
+</script>
+</body>
+</html>
