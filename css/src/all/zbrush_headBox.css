@@ -1,7 +1,7 @@
 /*news_headBox.css*/
 
 
-#headBox{/*position: fixed;*/ top: 0; left: 0; z-index: 1000; 
+#headBox{position: fixed; top: 0; left: 0; z-index: 1000; 
         box-sizing:border-box; 
         width: 100%; height: 100px; 
         background-color:#000;}
