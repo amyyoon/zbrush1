@@ -1,0 +1,200 @@
+/*news_newsBox.css*/
+
+#newsBox{margin: auto;width: 100%;
+padding-top: 5rem;box-sizing: border-box;
+height: auto; background-color: #fff;}
+.news{margin: auto;width: 100%; height: 1200px;}
+.news>li{width: 100%; height: 100%;}
+
+.news>li>dl{float:left;width: 25%; height: 33.33333%;
+background-position: center;
+background-repeat: no-repeat;
+-webkit-background-size: cover;
+background-size: cover;}
+.news>li>dl:nth-of-type(1),
+.news>li>dl:nth-of-type(6),
+.news>li>dl:nth-of-type(7){width: 50%;}
+
+.news>li>dl:nth-of-type(2),
+.news>li>dl:nth-of-type(5),
+.news>li>dl:nth-of-type(8)>a:hover{background-color:rgba(255,255,255,0.7);
+transition: all 500ms ease;}
+
+/*.news>li>dl:nth-of-type(2)>a:hover{transition: all 500ms ease;
+background-image: url('../../../img/n1.jpg');}
+.news>li>dl:nth-of-type(5)>a:hover{transition: all 500ms ease;
+background-image: url('../../../img/n2.jpg');}
+.news>li>dl:nth-of-type(8)>a:hover{transition: all 500ms ease;
+background-image: url('../../../img/n13.jpg');}*/
+
+.news>li>dl:nth-of-type(2)>a>h2,
+.news>li>dl:nth-of-type(5)>a>h2,
+.news>li>dl:nth-of-type(8)>a>h2
+{opacity: 1; transition: all 500ms ease;
+text-transform: uppercase; font-style: 2rem;
+font-weight: 800; color:#000;}
+
+.news>li>dl:nth-of-type(2)>a>p,
+.news>li>dl:nth-of-type(5)>a>p,
+.news>li>dl:nth-of-type(8)>a>p{opacity: 1;
+text-transform: uppercase; font-style: 1rem;
+transition: all 500ms ease; color:#000;}
+
+.news>li>dl:nth-of-type(2)>a>h2:hover,
+.news>li>dl:nth-of-type(5)>a>h2:hover,
+.news>li>dl:nth-of-type(8)>a>h2:hover
+{border-bottom:1px solid #f16031; width: 100%;}
+
+.news>li>dl:nth-of-type(2)>a>p:hover,
+.news>li>dl:nth-of-type(5)>a>p:hover,
+.news>li>dl:nth-of-type(8)>a>p:hover
+{text-decoration-line:underline ; 
+text-decoration-color: #f16031;
+width: 100%;}
+
+/*text*/
+.news>li>dl>dd{font-size: 1rem;
+padding:15% 10%;box-sizing: border-box;
+width: 50%; height: 100%; text-align:center;}
+
+
+/*큰배너hover*/
+
+
+
+
+
+
+
+/*큰배너사진*/
+.news>li>dl:nth-of-type(1){
+background-image: url('../../../img/n8.jpg');}
+.news>li>dl:nth-of-type(3){
+background-image: url('../../../img/n3.jpg');}
+.news>li>dl:nth-of-type(4){
+background-image: url('../../../img/n4.jpg');}
+.news>li>dl:nth-of-type(6){
+background-image: url('../../../img/n6.jpg');}
+.news>li>dl:nth-of-type(7){
+background-image: url('../../../img/n7.jpg');}
+.news>li>dl:nth-of-type(9){
+background-image: url('../../../img/n9.jpg');}
+
+
+
+
+/*mobile*/
+@media screen and (max-width: 480px) {
+#newsBox{padding-top: 3rem;box-sizing: border-box;}
+.news{height: 250vw;}
+.news>li>dl>dd{font-size: 0.9rem;float:right; 
+padding:10% 5%;box-sizing: border-box;
+width: 50%; height: 100%; text-align:center;}
+
+.news>li>dl>a{position:relative; display: block;
+padding:15% 10% 15% 10%; box-sizing: border-box; text-align: center;
+width: 100%; height: 100%; color:#000;}
+
+.news>li>dl>a>h2{opacity: 1;
+text-transform: uppercase; font-style: 1rem;
+font-weight: 800; padding: 25% 5%; box-sizing: border-box;}
+.news>li>dl>a>p{display: none;}
+.news>li>dl>a{background-color: rgba(255,255,255,0.7);}
+
+/*큰 배너만 보이게 하기*/
+.news>li>dl:nth-of-type(1){width: 100%;}
+.news>li>dl:nth-of-type(7){width: 100%;}
+
+.news>li>dl:nth-of-type(6){width: 100%;}
+.news>li>dl:nth-of-type(6)>a{background-color: rgba(0,0,0,0.7);}
+.news>li>dl:nth-of-type(6)>a{color:#fff}
+
+.news>li>dl:nth-of-type(2){display: none;}
+.news>li>dl:nth-of-type(3){display: none;}
+.news>li>dl:nth-of-type(4){display: none;}
+.news>li>dl:nth-of-type(5){display: none;}
+.news>li>dl:nth-of-type(8){display: none;}
+.news>li>dl:nth-of-type(9){display: none;}
+
+}
+
+/*tablet*/
+@media screen and (min-width: 481px) and (max-width: 767px) {
+#newsBox{padding-top: 3rem;box-sizing: border-box;}
+.news{height: 156vw;}
+.news>li>dl>dd{font-size: 0.9rem;float:right; 
+padding:10% 5%;box-sizing: border-box;
+width: 50%; height: 100%; text-align:center;}
+
+.news>li>dl>a{position:relative; display: block;
+padding:15% 10% 15% 10%; box-sizing: border-box; text-align: center;
+width: 100%; height: 100%; color:#000;}
+
+.news>li>dl>a>h2{opacity: 1;
+text-transform: uppercase; font-style: 2rem;
+font-weight: 800;}
+.news>li>dl>a>p{opacity: 1;
+text-transform: uppercase; font-style: 1rem;}
+.news>li>dl>a{background-color: rgba(255,255,255,0.7);}
+
+/*큰 배너만 보이게 하기*/
+.news>li>dl:nth-of-type(1){width: 100%;}
+.news>li>dl:nth-of-type(7){width: 100%;}
+
+.news>li>dl:nth-of-type(6){width: 100%;}
+.news>li>dl:nth-of-type(6)>a{background-color: rgba(0,0,0,0.7);}
+.news>li>dl:nth-of-type(6)>a{color:#fff}
+
+.news>li>dl:nth-of-type(2){display: none;}
+.news>li>dl:nth-of-type(3){display: none;}
+.news>li>dl:nth-of-type(4){display: none;}
+.news>li>dl:nth-of-type(5){display: none;}
+.news>li>dl:nth-of-type(8){display: none;}
+.news>li>dl:nth-of-type(9){display: none;}
+}
+
+/*laptop*/
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+#newsBox{padding-top: 3rem;box-sizing: border-box;}
+.news{height: 130vw;}
+.news>li>dl>a{font-size: 0.9rem;float:right; 
+padding:30% 5%; box-sizing: border-box;
+width: 100%; height: 100%; text-align:center;}
+
+.news>li>dl>a{position:relative; display: block;
+padding:15% 10% 15% 10%; box-sizing: border-box; text-align: center;
+width: 100%; height: 100%; color:#000}
+
+.news>li>dl>a:hover{background-color: rgba(255,255,255,0.7);
+transition: all 500ms ease;}
+
+.news>li>dl>a>h2{opacity: 0;
+text-transform: uppercase; font-style: 2rem;
+font-weight: 800;}
+.news>li>dl>a>p{opacity: 0;
+text-transform: uppercase; font-style: 1rem;}
+
+.news>li>dl>a:hover h2,
+.news>li>dl>a:hover p
+{opacity: 1;}
+}
+
+/*pcfull*/
+@media screen and (min-width: 1366px) {
+.news>li>dl>a{position:relative; display: block;
+padding:15% 10% 15% 10%; box-sizing: border-box; text-align: center;
+width: 100%; height: 100%; color:#000}
+
+.news>li>dl>a:hover{background-color: rgba(255,255,255,0.7);
+transition: all 500ms ease;}
+
+.news>li>dl>a>h2{opacity: 0;
+text-transform: uppercase; font-style: 2rem;
+font-weight: 800;}
+.news>li>dl>a>p{opacity: 0;
+text-transform: uppercase; font-style: 1rem;}
+
+.news>li>dl>a:hover h2,
+.news>li>dl>a:hover p
+{opacity: 1;}
+}

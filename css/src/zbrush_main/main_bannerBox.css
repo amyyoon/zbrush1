@@ -1,0 +1,69 @@
+/*bannerBox*/
+#bannerBox{position: relative; z-index:700;
+padding-top: 100px; box-sizing:border-box;
+width: 100%; height: 100%; background-color: transparent;}
+.copy{position:relative;
+display: block; margin: auto;
+margin-top: 200px; 
+width: 740px;height: 1px;background-color: #fff;}
+.copy>p:nth-of-type(1){padding: 100px 30px;
+color:#fff; font-size: 2rem;
+text-align:center;padding-bottom: 20px; box-sizing:border-box;
+letter-spacing:3px;}
+.copy>p:nth-of-type(2){padding: 20px 50px; box-sizing:border-box;
+color:#fff; font-size: 1rem;
+text-align:center}
+
+.copy>p:nth-of-type(1).show{color:#000; font-size: 1.5rem; color:#fff;
+text-align:center;padding-bottom: 20px; box-sizing:border-box;
+letter-spacing:3px;}
+
+.copy>p:nth-of-type(2).show{padding-top: 20px; box-sizing:border-box;
+color:#fff; font-size: 1rem;
+text-align:center;}
+
+.copy>span{display: none;
+position: absolute; top:0%; left:0%;
+width: 100%;height: 1rem;
+background-color: transparent;
+border-top:2px solid #fff;}
+
+.copy>span.o{display: block;}
+/*-webkit-animation: bannermove 5s infinite; 
+animation: bannermove 5s infinite;
+}
+
+
+@-webkit-keyframes bannermove {
+50% {line-height: 50px;}
+}
+
+@keyframes bannermove {
+50% {line-height: 50px;}
+}*/
+
+@media screen and (max-width: 480px) {
+#bannerBox{padding-top: 100px; height: 90%;}
+.copy{width: 300px;}
+.copy>p:nth-of-type(1){font-size: 1rem;}
+.copy>p:nth-of-type(2){font-size: 0.8rem;}
+ }
+
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+#bannerBox{padding-top: 100px;}
+.copy{width: 480px;}
+.copy>p:nth-of-type(1){font-size: 1.5rem;}
+.copy>p:nth-of-type(2){font-size: 1rem;}
+}
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+#bannerBox{padding-top: 70px;}
+.copy{width: 740px;}
+.copy>p:nth-of-type(1){font-size: 2rem;}
+.copy>p:nth-of-type(2){font-size: 1rem;}
+}
+
+@media screen and (min-width: 1366px) {
+
+}
+

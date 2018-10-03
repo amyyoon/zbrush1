@@ -1,0 +1,93 @@
+/*news_headBox.css*/
+
+
+#headBox{/*position: fixed;*/ top: 0; left: 0; z-index: 1000; 
+        box-sizing:border-box; 
+        width: 100%; height: 100px; 
+        background-color:#000;}
+#headBox>h1{margin: auto; width: 130px; height: 40px;
+background-image: url(../../../img/zbrush-logo1.png);
+background-repeat: no-repeat;
+background-position: center;
+-webkit-background-size: contain;
+background-size: contain;}
+#headBox>h1>a{display: block; width: 100%; height: 100%;}
+
+
+
+/**/
+.gnb_wrap{position: relative; /*margin-top: 0.5rem;*/ 
+width: 100%; height: auto;}
+.gnb_btn{position: absolute; left: 0; top: -2rem; 
+        width: 2.5rem; height: 2.5rem;}
+.gnb_btn>button{width: 100%; height: 100%; padding: 0; transition:all 500ms ease;}
+.icon{display: block; width: 100%; height: 4px; background-color: #fff; 
+      position: relative; transition:all 500ms ease;}
+.icon:before {content:" "; display: block; 
+              width: 100%; height: 4px; background-color: #fff;
+              position: absolute; top: -1rem; transition:all 500ms ease;}
+.icon:after {content:" "; display:block; 
+            width:100%; height:4px; background-color:#fff;
+            position: absolute; bottom: -1rem; transition:all 500ms ease;}
+
+.gnb_btn>button.active {transform:rotateY(540deg)}
+.gnb_btn>button.active .icon{background:transparent;}
+.gnb_btn>button.active .icon:before{transform-origin:left top; width:130%; transform:rotate(40deg);}
+.gnb_btn>button.active .icon:after{transform-origin:left bottom; width: 130%;  transform:rotate(-40deg);}
+
+#gnb{width: 100%; height: auto;  background-color: #000;}
+#gnb>ul{width: 100%; height:40px; 
+  /*background-color: rgba(0,0,0,0.7);*/}
+#gnb>ul>li{float:left; margin-right: 6.2%;  width: 15%; height: 40px; 
+/*background-color: inherit*/}
+#gnb>ul>li:last-child{margin-right: 0; }
+#gnb>ul>li>a{display: block; width: 100%; padding-top: 0.8rem; 
+text-transform:uppercase; color:#fff;
+text-align: center; font-size: 0.9rem;}
+
+#gnb>ul>li>a:hover,
+#gnb>ul>li>a:focus{color:#f16031; transtion:all 300ms ease;}
+
+#gnb>ul>li>ol{display: none;width: 100%;height: 60px;
+margin-top: 10px;}
+
+#gnb>ul>li>ol>li{width: 100%; height: 30%; text-align:center;
+margin-top: 6px}
+#gnb>ul>li>ol>li>a{margin: auto;width:100%; height: 2px;
+font-size: 0.8rem; color:#fff;
+text-align:center; text-transform:uppercase;}
+#gnb>ul>li>ol>li>a:hover,
+#gnb>ul>li>ol>li>a:focus{color:#f16031; transtion:all 300ms linear;}
+
+
+/* 기능을 주었다가 해제하는경우
+ floal:?; -> float:none;
+ position:?; -> position:static;
+ font-size, font-weight...font... -> normal
+ margin, padding, top, bottom -> auto
+*/
+
+@media screen and (max-width: 480px) {
+  #headBox{width: 100%;height: 80px;}
+  #headBox>h1{padding-top: 20px;}
+  #gnb>ul{width: 100%; height: auto; }
+  #gnb>ul>li{float:none; width: 100%; 
+    height: 80px; margin-bottom: 1rem; }
+  .gnb_btn{top:-3rem; left:1rem;}
+
+
+
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+#headBox{width: 100%;height: 100px;padding:1rem;}
+.gnb_btn{position: absolute; left: 0; top: -2.5rem; 
+width: 2.5rem; height: 2.5rem;}
+}
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+#headBox{padding:1rem;}
+}
+
+@media screen and (min-width: 1366px) {
+  #headBox{padding:1rem;}
+  .gnb_btn{display: none;}
+}

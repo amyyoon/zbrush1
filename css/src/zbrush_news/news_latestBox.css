@@ -1,0 +1,145 @@
+/*news_latestBox.css*/
+
+#latestBox{padding-top: 120px;
+box-sizing: border-box;
+width: 100%;
+height: 1200px;}
+
+#latestBox>p{text-align: center;}
+#latestBanner{position: relative;
+width: 100%;height: 100%; background-color: #fff;}
+.btn{position: absolute; margin: auto;
+width: 100%; height: 0; top:50%; margin-top: -20px;
+margin-right: -100px;position: absolute; z-index: 600;}
+
+.btn>button{width: 100px;height: 40px;
+border-radius:0.3rem;}
+.btn>button:nth-of-type(1){float:left;}
+.btn>button:nth-of-type(2){float:right;}
+
+.pbtn>i{color:#201f1d; font-size: 3rem;}
+.nbtn>i{color:#201f1d; font-size: 3rem;}
+
+.banner_box{width: 100%;height: 100%;
+position: absolute; z-index: 500;}
+
+.banner_overflow{margin: auto; width: 70%; height: 700px;
+overflow:hidden;}
+
+.banner_wrap{width: 300%; height: 100%; z-index: 400;
+margin: auto;}
+
+.banner_wrap>div{position: relative;
+/*width: 200px; height: 360px;margin-right: 17rem;*/
+float:left; 
+text-align:center; 
+background-repeat: no-repeat; 
+-webkit-background-size: cover; 
+background-size: cover; 
+background-position: center;
+transform:scale(1); 
+transition:all 500ms ease;
+}
+
+/*.banner_wrap>div:hover {
+background-color: rgba(255,255,255,0.7);
+transfrom:scale(1.5);}*/
+
+.banner_wrap>div>div{position: absolute;
+bottom:0;
+width: 100%; height: 100px;
+background-color: #fff; font-weight: bold; color:#000;}
+
+/*나중에 3번째 걸로 고쳐야 함*/
+
+/*.banner_wrap>div:nth-of-type(4)
+.banner_wrap>div:nth-of-type(5)
+.banner_wrap>div:nth-of-type(6)*/
+
+
+.banner_01{
+background-image: url('../../../img/pablo-thumbnail.jpg');
+background-position: center;
+background-repeat: no-repeat;
+-webkit-background-size: cover;
+background-size: cover;
+}
+.banner_02{
+background-image: url('../../../img/news01.jpg');
+}
+.banner_03{ 
+background-image: url('../../../img/news02.jpg');
+}
+.banner_04{
+background-image: url('../../../img/news03.jpg');
+}
+
+.banner_05{background-image: url('../../../img/news05.jpg');
+}
+
+.banner_06{background-image: url('../../../img/news04.jpg');
+}
+
+
+@media screen and (max-width: 480px) {
+
+#latestBox>p{font-size: 1.5rem;}
+#latestBox{height: 600px; padding-top: 70px;}
+.banner_overflow{margin-top: 50px;}
+.banner_wrap>div{width: 350px; 
+height: 360px; /*360px;*/
+margin-right: 1rem; /*272px 17rem;*/ font-size: 0.7rem;}
+.banner_wrap{width: 1500%; height: 100%;}
+.btn>button{width: 40px;height: 20px;
+border-radius:0.3rem;}
+.pbtn>i{color:#201f1d; font-size: 1rem;}
+.nbtn>i{color:#201f1d; font-size: 1rem;}
+.btn{position: absolute; margin: auto;
+width: 100%; height: 0; top:50%; margin-top:-100px;
+margin-right: -100px;position: absolute; z-index: 600;}
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+#latestBox{height: 700px;}
+#latestBox>p{font-size: 1.5rem;}
+.banner_overflow{margin-top: 70px; height: 400px;}
+.banner_wrap>div{width: 400px; 
+height: 400px; /*360px;*/
+margin-right: 1rem; /*272px 17rem;*/ }
+.banner_wrap{width: 1500%; height: 100%;}
+.btn>button{width: 60px;height: 30px;
+border-radius:0.3rem;}
+.pbtn>i{color:#201f1d; font-size: 2rem;}
+.nbtn>i{color:#201f1d; font-size: 2rem;}
+.btn{position: absolute; margin: auto;
+width: 100%; height: 0; top:50%; margin-top: -100px;
+margin-right: -100px;position: absolute; z-index: 600;}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+#latestBox>p{font-size: 2.5rem;}
+#latestBox{height: 900px;}
+.banner_wrap{width: 1500%;}
+.banner_overflow{height: 500px; margin-top: 50px;}
+.banner_wrap>div{width:740px; /*20vw;*/ /*200px*/ 
+height: 500px; /*40vw;*/ /*360px;*/
+margin-right: 2vw; /*272px 17rem;*/ 
+font-size: 0.8rem;}
+.pbtn>i{color:#201f1d; font-size: 2rem;}
+.nbtn>i{color:#201f1d; font-size: 2rem;}
+.btn{position: absolute; margin: auto;
+width: 100%; height: 0; top:50%; margin-top: -150px;
+margin-right: -100px;position: absolute; z-index: 600;}
+}
+
+@media screen and (min-width: 1366px) {
+#latestBox>p{font-size: 2.5rem;}
+#latestBox{height: 1100px;}
+.banner_overflow{margin-top: 70px;}
+.banner_wrap>div{width: 14.6412884vw; /*200px*/ height: 26.35431vw; /*360px;*/
+margin-right: 8vw; /*272px 17rem;*/ 
+font-size: 1rem;}
+.banner_wrap>div.active {transform:scale(1.5);}
+.banner_wrap{padding:10rem 5rem; box-sizing: border-box;}
+}
